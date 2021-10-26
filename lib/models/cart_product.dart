@@ -55,18 +55,7 @@ class CartProduct extends ChangeNotifier {
     notifyListeners();
   }
 
-  //Essas são tentativas de funções, mas retornam null e dão erro:
-  //
-  // bool hasStock (CartProduct cartProduct) {
-  //   final stock = itemQuantity.stock;
-  //   if (stock == null) return false;
-  //   return stock >= cartProduct.quantity;
-  // 
-  // bool get stocky {
-  //   final stock = itemQuantity.hasStock;
-  //   if (stock == null) return false;
-  //   return itemQuantity.stock >= quantity;
-  // }
+
 
   bool get hasStock {
     final stock = itemQuantity;
